@@ -1,0 +1,37 @@
+body {
+  font-family: Helvetica, sans-serif;
+  color: #76808b;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.pageHeader {
+  color: white;
+  font-size: 2rem;
+  background-color: #ea4868;
+  padding: 2rem;
+}
+
+.tableWrapper {
+  padding: 2rem;
+}
+
+th {
+  background-color: #f0f0fa;
+  padding: 1.5rem;
+}
+
+td {
+  background-color: ghostwhite;
+  padding: 1.5rem;
+}
+
+a {
+  color: #2ea3f2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0b73b8;
+  text-decoration: underline;
+}

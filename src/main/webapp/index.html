@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<!-- NewtonFlix -->
+<script src="js/app.js"></script>
+<script src="js/controllers/newtonflix-controller.js"></script>
+<script src="js/services/newtonflix-titles-service.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/app.css">
+
+<body>
+
+<div ng-app="newtonFlixApp" ng-controller="newtonFlixController">
+  <div class="pageHeader">Newton Flix</div>
+
+  <div class="tableWrapper">
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>IMDb URL</th>
+      </tr>
+      <!-- one row per movie -->
+      <tr ng-repeat="movie in movies">
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td><a href="{{movie.link}}">{{movie.link}}</a></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
